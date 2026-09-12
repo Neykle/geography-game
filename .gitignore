@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# React / Node
+node_modules/
+dist/
+
+# Secret configuration
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
