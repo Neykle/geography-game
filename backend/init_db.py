@@ -12,7 +12,26 @@ cursor.execute("""
     )
 """)
 
+
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS country_stats (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        country_id INTEGER NOT NULL,
+        population_rank INTEGER,
+        area_rank INTEGER,
+        gdp_per_capita_rank INTEGER,
+        tourism_rank INTEGER,
+        fertility_rank INTEGER,
+        life_expectancy_rank INTEGER,
+        emissions_per_capita_rank INTEGER,
+        cuisine_rank INTEGER,
+        internet_usage_rank INTEGER,
+        FOREIGN KEY (country_id) REFERENCES countries(id)
+    )
+""")
+
+
 connection.commit()
 connection.close()
 
-print("Database created successfully!")
+print("Database created successfully!") 
