@@ -84,3 +84,36 @@ Set up the basic development environment and create a working foundation for my 
 
 Start Phase 2 and begin developing the actual geography game rather than just its technical foundation.
 
+
+
+
+## Phase 2 — Database and Country Data
+
+### Goal
+Create a working country database and connect it to the frontend.
+
+### What I completed
+- Created a test list of North American countries.
+- Researched data sources for the 9 game categories.
+- Added a `country_stats` table to SQLite.
+- Imported countries from CSV using Python.
+- Imported test country rankings into SQLite.
+- Checked the database for missing data.
+- Created a Flask API endpoint that returns a random country.
+- Connected React to the Flask API.
+- Displayed country ranks in the frontend.
+
+### Problems I encountered
+- Created the `country_stats.csv` file inside an extra `data` folder by mistake.
+- Flask was not found because the Python virtual environment was not activated.
+- Learned how to fix file paths and activate the virtual environment.
+
+### What I learned
+- How CSV data can be imported into SQLite with Python.
+- How two database tables can be linked using a foreign key.
+- How Flask reads data from SQLite and returns JSON.
+- How React fetches JSON from a Flask API.
+- How backend data reaches the frontend.
+
+### Next
+Start Phase 3 and build the actual 3×3 game interface and game logic.
